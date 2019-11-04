@@ -9,8 +9,8 @@ class OnboardingTutorial:
         "text": {
             "type": "mrkdwn",
             "text": (
-                "Welcome to Slack! :wave: We're so glad you're here. :blush:\n\n"
-                "*Get started by completing the steps below:*"
+                "Welcome to our own private workspace on Slack! We're happy to have you. :blush:\n\n"
+                "*Here's a little tutorial to help you get started:*"
             ),
         },
     }
@@ -18,8 +18,8 @@ class OnboardingTutorial:
 
     def __init__(self, channel):
         self.channel = channel
-        self.username = "pythonboardingbot"
-        self.icon_emoji = ":robot_face:"
+        self.username = "tinycarebot"
+        self.icon_emoji = ":octopus:"
         self.timestamp = ""
         self.reaction_task_completed = False
         self.pin_task_completed = False
@@ -44,7 +44,7 @@ class OnboardingTutorial:
         text = (
             f"{task_checkmark} *Add an emoji reaction to this message* :thinking_face:\n"
             "You can quickly respond to any message on Slack with an emoji reaction."
-            "Reactions can be used for any purpose: voting, checking off to-do items, showing excitement."
+            "Emoji reactions can be used for many purposes: voting, checking off to-do items, showing excitement."
         )
         information = (
             ":information_source: *<https://get.slack.help/hc/en-us/articles/206870317-Emoji-reactions|"
